@@ -23,8 +23,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
-            LoaiSanSeeder::class,
-            SanSeeder::class,
+            PitchTypeSeeder::class,
+            PitchSeeder::class,
         ]);
     }
 }

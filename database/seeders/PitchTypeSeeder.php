@@ -5,32 +5,32 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class LoaiSanSeeder extends Seeder
+class PitchTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('loaisan')->insert([
+        DB::table('pitch_types')->insert([
             [
-                'MaLoai' => 'bd',
-                'TenLoai' => 'Bóng đá',
-                'MoTa' => 'Sân bóng đá',
+                'code' => 'bd',
+                'name' => 'Bóng đá',
+                'description' => 'Sân bóng đá',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'MaLoai' => 'cl',
-                'TenLoai' => 'Cầu lông',
-                'MoTa' => 'Sân cầu lông',
+                'code' => 'cl',
+                'name' => 'Cầu lông',
+                'description' => 'Sân cầu lông',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'MaLoai' => 'pkb',
-                'TenLoai' => 'Pickleball',
-                'MoTa' => 'Sân pickleball',
+                'code' => 'pkb',
+                'name' => 'Pickleball',
+                'description' => 'Sân pickleball',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('loaisan', function (Blueprint $table) {
-            $table->string('MaLoai', 10)->primary();
-            $table->string('TenLoai', 100);
-            $table->string('MoTa', 255)->nullable();
+        Schema::create('pitch_types', function (Blueprint $table) {
+            $table->string('code', 10)->primary();
+            $table->string('name', 100);
+            $table->string('description', 255)->nullable();
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('loaisan');
+        Schema::dropIfExists('pitch_types');
     }
 };
