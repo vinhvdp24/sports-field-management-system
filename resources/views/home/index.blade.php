@@ -165,13 +165,13 @@
         <div class="row g-4 justify-content-center">
             <!-- Bóng đá -->
             <div class="col-lg-4 col-md-6">
-                <a href="{{ Auth::check() ? '#' : route('login') }}" class="text-decoration-none">
+                <a href="{{ route('pitches.index', ['type' => 'bd']) }}" class="text-decoration-none">
                     <div class="card sport-card h-100 shadow-sm text-white bg-football p-4">
                         <div class="card-body d-flex flex-column text-center">
                             <h3 class="fw-bold mb-3">BÓNG ĐÁ</h3>
                             <p class="mb-4 opacity-75">Hệ thống sân cỏ nhân tạo tiêu chuẩn, đèn chiếu sáng hiện đại, thoáng mát.</p>
                             <div class="mt-auto">
-                                <span class="btn btn-light text-success btn-custom w-75 mx-auto shadow-sm">Đặt sân ngay</span>
+                                <span class="btn btn-light text-success btn-custom w-75 mx-auto shadow-sm">Xem danh sách</span>
                             </div>
                             <div class="sport-icon-bg">⚽</div>
                         </div>
@@ -180,13 +180,13 @@
             </div>
             <!-- Cầu lông -->
             <div class="col-lg-4 col-md-6">
-                <a href="{{ Auth::check() ? '#' : route('login') }}" class="text-decoration-none">
+                <a href="{{ route('pitches.index', ['type' => 'cl']) }}" class="text-decoration-none">
                     <div class="card sport-card h-100 shadow-sm text-dark bg-badminton p-4">
                         <div class="card-body d-flex flex-column text-center">
                             <h3 class="fw-bold mb-3">CẦU LÔNG</h3>
                             <p class="mb-4 opacity-75">Sân thảm chất lượng cao, không gian rộng rãi, trang thiết bị chuyên nghiệp.</p>
                             <div class="mt-auto">
-                                <span class="btn btn-dark text-warning btn-custom w-75 mx-auto shadow-sm">Đặt sân ngay</span>
+                                <span class="btn btn-dark text-warning btn-custom w-75 mx-auto shadow-sm">Xem danh sách</span>
                             </div>
                             <div class="sport-icon-bg">🏸</div>
                         </div>
@@ -195,13 +195,13 @@
             </div>
             <!-- Pickleball -->
             <div class="col-lg-4 col-md-6">
-                <a href="{{ Auth::check() ? '#' : route('login') }}" class="text-decoration-none">
+                <a href="{{ route('pitches.index', ['type' => 'pkb']) }}" class="text-decoration-none">
                     <div class="card sport-card h-100 shadow-sm text-white bg-pickleball p-4">
                         <div class="card-body d-flex flex-column text-center">
                             <h3 class="fw-bold mb-3">PICKLEBALL</h3>
                             <p class="mb-4 opacity-75">Xu hướng thể thao mới nhất, mặt sân thiết kế đạt tiêu chuẩn quốc tế.</p>
                             <div class="mt-auto">
-                                <span class="btn btn-light text-primary btn-custom w-75 mx-auto shadow-sm">Đặt sân ngay</span>
+                                <span class="btn btn-light text-primary btn-custom w-75 mx-auto shadow-sm">Xem danh sách</span>
                             </div>
                             <div class="sport-icon-bg">🎾</div>
                         </div>

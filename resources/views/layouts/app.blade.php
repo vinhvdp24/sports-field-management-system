@@ -107,6 +107,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-white fw-medium px-3" href="{{ route('home') }}">Trang Chủ</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-medium px-3" href="{{ route('pitches.index') }}">Danh Sách Sân</a>
+                    </li>
                     
                     <!-- Xử lý menu dựa theo Auth của Laravel -->
                     @auth
@@ -154,6 +157,7 @@
     <main class="container mt-4 flex-fill">
         <!-- NỘI DUNG CỦA CÁC TRANG CON SẼ ĐƯỢC CHÈN VÀO ĐÂY -->
         @yield('content')
+        {{ $slot ?? '' }}
     </main>
 </div> 
 
